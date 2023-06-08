@@ -29,10 +29,10 @@ $(warning ld does not support --fix-cortex-a53-843419 or --fix-cortex-a53; kerne
     else
 # When this option was first introduced, it was called --fix-cortex-a53 in gold.
 # So, let's use that as fall-back if the linker understands it.
-LDFLAGS_vmlinux += --fix-cortex-a53
+LDFLAGS_vmlinux	+= --fix-cortex-a53
     endif
   else
-LDFLAGS_vmlinux += --fix-cortex-a53-843419
+LDFLAGS_vmlinux	+= --fix-cortex-a53-843419
   endif
 endif
 
